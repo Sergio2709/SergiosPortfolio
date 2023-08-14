@@ -1,0 +1,33 @@
+.nav{
+    text-decoration: none;
+    color: #1a779f;
+    font-size:1.5rem;
+    font-weight: 400;
+}
+
+.nav:hover{
+    color:#4fc6fa;
+}
+
+.hamburger-react{
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .hamburger-react{
+        display: block;
+    }
+
+    .nav{
+        width: 100%;
+        align-content: left;
+    }
+
+    .hidden {
+        display: none;
+    }
+    
+    .visible {
+        display: block;
+    }
+}

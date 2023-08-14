@@ -1,0 +1,40 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 50vw;
+    background: white;
+    border-radius: 1vw;
+    
+}
+
+
+.field{
+    width: 80%;
+    background: white;
+    color:  #4fc6fa;
+    margin: auto;
+    border-radius: 1vw;
+    justify-content: center;
+}
+
+.alert{
+    color: red;
+    font-size:.5rem;
+    justify-content: left;
+}
+
+.button {
+    background: #1a779f;
+    width: 80%;
+}
+
+@media screen and (max-width:1024px) {
+    .Form{
+        width: 100%;
+        height: fit-content;
+        padding: 3vw;
+    }
+}
