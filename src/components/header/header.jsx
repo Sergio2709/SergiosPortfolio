@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import "./header.css";
 import { Sling as Hamburger } from 'hamburger-react'
+import logo from '../../img/logo blanco.png'
+import fotoDoc from '../../img/Sergio.jpg'
 
 const StyleHeader = styled.header`
     background: linear-gradient(#1a779f,#a91998);
@@ -28,7 +30,6 @@ const StyleTittle = styled.h1`
 const StylePhoto = styled.img`
     width:8vw;
     border-radius:2.5vw;
-    
 `
 
 const NavBar = styled.div`
@@ -48,7 +49,6 @@ const NavBar = styled.div`
     }
 `
 
-
 function Header() {
     const [nav, setNav] = useState("nav hidden")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
@@ -65,14 +65,14 @@ function Header() {
     }
     return <StyleHeader>
         <StyleInfo>
-            <StyledLogo src="/img/logo blanco.png" alt="Logo"/>
+            <StyledLogo src={logo} alt="Logo"/>
             <StyleTittle>Sergio Ivan Castillo Carrillo</StyleTittle>
-            <StylePhoto src="/img/Sergio.jpg" alt="Foto" />
+            <StylePhoto src={fotoDoc} alt="Foto" />
         </StyleInfo>
         <StyleInfo>
             <NavBar>
                 <Hamburger className="hamburger-react" direction="left" color="#1a779f" hideOutline={false} onToggle={updateMenu}></Hamburger>
-                <Link className={nav} to="/">HOME</Link>
+                <Link className={nav} to="/SergiosPortfolio">HOME</Link>
                 <Link className={nav} to="/me">ABOUT ME</Link>
                 <Link className={nav} to="/skills">SKILLS</Link>
                 <Link className={nav} to="/hobbies">HOBBIES</Link>

@@ -10,7 +10,6 @@ const Message = ({msg}) => {
         font-weight: bold;
         background: #3fd150;
         width: 80%;
-
     ` 
     return <StyleMessage>
         <p>{msg}</p>

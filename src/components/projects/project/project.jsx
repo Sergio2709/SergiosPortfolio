@@ -47,9 +47,8 @@ const Buttons = styled.div`
     padding: 1vw;
     display: flex;
     justify-content: space-around;
-    
-
 `
+
 const ButtonVisit = styled.button`
     font-size: 1.5rem;
     border-radius: 1vw;
@@ -57,8 +56,7 @@ const ButtonVisit = styled.button`
     width: 25%;
     padding: 1vw;
     & :hover{
-        color: #4fc6fa;
-        
+        color: #4fc6fa;  
     }
     @media screen and (max-width:800px) {
         width: 40%;
@@ -68,12 +66,11 @@ const ButtonVisit = styled.button`
     }
 `
 
-
 function Project (props) {
     const {tittle, view, URL, repository} = props;
         return<StyledProject>
             <Tittle>{tittle}</Tittle>
-            <View src={"/img/"+view} alt={tittle}/>
+            <View src={view} alt={tittle}/>
             <Buttons>
                 <ButtonVisit> 
                     <Page href={URL}> Website </Page>

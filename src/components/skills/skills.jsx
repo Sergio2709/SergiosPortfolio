@@ -1,7 +1,22 @@
 import React from "react";
 import { styled } from "styled-components";
 import Skill from "./skill/skill";
-
+import JS from '../../img/Javascript.jpg';
+import CSS from '../../img/CSS.png';
+import HTML from '../../img/HTML.jpg';
+import ReactJS from '../../img/React.png';
+import Python from '../../img/Python.png';
+import Java from '../../img/Java.webp';
+import SQL from '../../img/SQL.png';
+import Git from '../../img/Git.png';
+import GitHub from '../../img/GitHub.webp';
+import Trello from '../../img/Trello.png';
+import Jira from '../../img/Jira.png';
+import EN from '../../img/english.png';
+import FbAds from '../../img/FbAds.png';
+import GGAds from '../../img/GoogleAds.png';
+import BS from '../../img/BussinessSuite.png';
+import GGA from '../../img/GoogleAnalytics.png';
 
 const MainTittle = styled.h3`
     width: 100%;
@@ -21,72 +36,71 @@ const StyleDiv = styled.div`
     padding:.7rem 4%;
 `
 
-
 function Skills(){
     return <StyleDiv>
         <MainTittle>SKILLS</MainTittle>
             <Skill
-                icon= {"Javascript.jpg"}
+                icon= {JS}
                 text= {"JavaScript"}
             />
             <Skill 
-                icon= {"CSS.png"}
+                icon= {CSS}
                 text = {"CSS"}
             />
             <Skill 
-                icon= {"HTML.jpg"}
+                icon= {HTML}
                 text = {"HTML"}
             />
             <Skill 
-                icon= {"React.png"}
+                icon= {ReactJS}
                 text = {"React.js"}
             />
             <Skill 
-                icon= {"Python.png"}
+                icon= {Python}
                 text = {"Python"}
             />
             <Skill 
-                icon= {"Java.webp"}
+                icon= {Java}
                 text = {"Java"}
             />
             <Skill 
-                icon= {"SQL.png"}
+                icon= {SQL}
                 text = {"Database"}
             />
             <Skill 
-                icon= {"Git.png"}
+                icon= {Git}
                 text = {"Git"}
             />
             <Skill 
-                icon= {"GitHub.webp"}
+                icon= {GitHub}
                 text = {"GitHub"}
             />
             <Skill 
-                icon= {"Trello.png"}
+                icon= {Trello}
                 text = {"Trello"}
             />
             <Skill 
-                icon= {"Jira.png"}
+                icon= {Jira}
                 text = {"Jira"}
             />
             <Skill 
-                icon= {"english.png"}
+                icon= {EN}
                 text = {"English advanced"}
             />
             <Skill 
-                icon= {"FbAds.png"}
+                icon= {FbAds}
                 text = {"Facebook adds"}
             />
             <Skill 
-                icon= {"GoogleAds.png"}
+                icon= {GGAds}
                 text = {"Google adds"}
             />
             <Skill 
-                icon= {"BussinessSuite.png"}
+                icon= {BS}
                 text = {"Meta bussiness Suite"}
             />
             <Skill 
-                icon= {"GoogleAnalytics.png"}
+                icon= {GGA}
                 text = {"Google analitics"}
             />
     </StyleDiv>

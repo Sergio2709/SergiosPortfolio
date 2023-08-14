@@ -12,15 +12,14 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   const handleSubmit = (valores) => {
-    console.log("Datos: ", valores)
+    console.log("Datos:", valores)
   }
-
     return (
 
     <div className="App">
       <Header/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/SergiosPortfolio" element={<Home/>} />
           <Route path="/me" element={<AboutMe/>} />
           <Route path="/skills" element={<Skills/>} />
           <Route path="/hobbies" element={<Hobbies/>} />

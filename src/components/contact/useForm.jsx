@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { helpHttp } from "../../resourses/helpHttp";
 
-
 export const useForm = (initialForm, validateForm) => {
     const [form, setForm] = useState(initialForm);
     const [errors, setErrors] = useState({});

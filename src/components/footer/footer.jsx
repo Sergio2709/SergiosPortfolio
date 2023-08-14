@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import logoN from '../../img/Logo negro.png'
 
 const StyleFooter = styled.header`
     background: linear-gradient(#a91998,#1a779f);
@@ -28,7 +29,7 @@ const StyleText = styled.h1`
 function Footer() {
     return <StyleFooter>
         <StyleInfo>
-            <StyledLogo src="/img/logo negro.png" alt="Logo"/>
+            <StyledLogo src={logoN} alt="Logo"/>
             <StyleText> Developed by Sergio Castillo </StyleText>
         </StyleInfo>            
     </StyleFooter>

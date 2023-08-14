@@ -46,9 +46,7 @@ const Images = styled.img`
     height: 20vw;
     width: auto;
     border-radius: 1vw;
-
 `
-
 
 function Careers (props) {
     const {career, specialization, description, studies, image, imageName} = props;

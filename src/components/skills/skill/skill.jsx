@@ -1,7 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
 
-
 const StyledSkill = styled.div`
     width: 20%;
     height: 20vw;
@@ -41,7 +40,7 @@ const Text = styled.p`
 function Skill (props) {
     const {icon, text} = props;
     return <StyledSkill>
-        <Icon src={"/img/"+icon} alt={text}/>
+        <Icon src={icon} alt={text}/>
         <Text>{text}</Text>
     </StyledSkill>
 }

@@ -17,7 +17,6 @@ const StyledStudies = styled.div`
         width: 95%;
         height: auto;
     }
-    
 `
 
 const Tittle = styled.h4`
@@ -46,9 +45,7 @@ const Image = styled.img`
         width: 95%;
         height: auto;
     }
-
 `
-
 
 function Studies (props) {
     const {career, school, year, image} = props;
@@ -56,7 +53,7 @@ function Studies (props) {
         <Tittle>{career}</Tittle>
         <School>{school}</School>
         <Year>{year}</Year>
-        <Image src={"/img/"+image} alt={school}/>
+        <Image src={image} alt={school}/>
     </StyledStudies>
 }
 

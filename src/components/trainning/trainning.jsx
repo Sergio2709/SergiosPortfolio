@@ -1,7 +1,9 @@
 import React from "react";
 import { styled } from "styled-components";
 import Studies from "./studies/studies";
-
+import one from '../../img/ONE.png'
+import unal from '../../img/UNAL.jpg'
+import next from '../../img/NEXT.webp'
 
 const MainTittle = styled.h3`
     width: 100%;
@@ -21,7 +23,6 @@ const StyleDiv = styled.div`
     padding:.7rem 4%;
 `
 
-
 function Trainning(){
     return <StyleDiv>
         <MainTittle>TRAINNING</MainTittle>
@@ -29,19 +30,19 @@ function Trainning(){
                 career={"Front End React Programmer"}
                 school={"Alura Latam - Oracle Next education"}
                 year={"December 2022 - June 2023"}
-                image= {"ONE.png"}
+                image= {one}
             />
             <Studies
                 career={"Web App Developer"}
                 school={"Universidad Nacional de Colombia - Mision TIC"}
                 year={"May 2022 - december 2022"}
-                image= {"UNAL.jpg"}
+                image= {unal}
             />
             <Studies
                 career={"Marketing Digital"}
                 school={"Next U "}
                 year={"Ene 2021 - december 2021"}
-                image= {"NEXT.webp"}
+                image= {next}
             />
     </StyleDiv>
 }

@@ -3,8 +3,8 @@ import { styled } from "styled-components";
 import { Button, TextField } from "@mui/material"
 import { useForm } from "./useForm";
 import "./contact.css"
-import Loader from "../../resourses/loader"
 import Message from "../../resourses/message"
+import phone from '../../img/phone.jpg'
 
 
 const MainTittle = styled.h3`
@@ -89,11 +89,10 @@ const validateForm = (form) => {
 }
 
 function Contact(props){
-    const {form, errors, loading, response, handleChange, handleBlur, handleSubmit} = useForm(initialForm, validateForm)
+    const {form, errors, response, handleChange, handleBlur, handleSubmit} = useForm(initialForm, validateForm)
     return <StyleDiv>
         <MainTittle>CONTACT</MainTittle>
-        <Image src="./img/phone.jpg"/>
-        
+        <Image src={phone}/>
         <form className="Form" onSubmit={handleSubmit}>
             <TextContact>Hi, If you want to contact me, you can fill the form and I will comunicate with you, Thanks for your interest</TextContact>
             <TextField 
@@ -151,9 +150,7 @@ function Contact(props){
                 required
             />
             {errors.message && <p className="alert">{errors.message}</p>}
-
             <Button className="button" variant= "contained" type="submit">Send</Button>
-            {loading && <Loader/>}
             {response && <Message msg="los datos han sido enviados" />}
         </form>
     </StyleDiv>

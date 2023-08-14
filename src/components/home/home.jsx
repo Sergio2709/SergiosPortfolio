@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components"
 import Icon from '@mdi/react';
 import {mdiFileDocumentOutline, mdiLinkedin, mdiWhatsapp, mdiGithub } from '@mdi/js';
+import fotoPerfil from '../../img/Perfil.jpg'
+import CV from '../../docs/CV - Sergio Castillo - FED - ColD.pdf'
 
 const StyledDiv = styled.div`
     background:linear-gradient(#a91998,#1a779f,#a91998);
@@ -54,7 +56,6 @@ const SocialBox = styled.ul`
         width: 97%;
         height: auto;
     }
-    
 `
 
 const SocialIcon = styled.a`
@@ -73,7 +74,7 @@ const SocialIcon = styled.a`
 function Home () {
     
     return <StyledDiv>
-        <Image src="/img/Perfil.jpg" alt="perfil"/>
+        <Image src={fotoPerfil} alt="perfil"/>
         <Presentacion>
             Welcome to my personal web page, I'm Sergio Castillo, 
             I'm 22 years old, I'm Colombian, I live in Bogotá, 
@@ -86,13 +87,11 @@ function Home () {
             the skill to adaptability
         </Presentacion>
         <SocialBox>
-            <SocialIcon href="/docs/CV - Sergio Castillo - FED - ColD.pdf"><Icon path={mdiFileDocumentOutline} size={2}/></SocialIcon>
+            <SocialIcon href={CV}><Icon path={mdiFileDocumentOutline} size={2}/></SocialIcon>
             <SocialIcon href="https://wa.me/qr/LEA7HHIAIHUMK1"><Icon path={mdiWhatsapp} size={2}/></SocialIcon>
             <SocialIcon href="https://www.linkedin.com/in/sergio-castillo-programador/"><Icon path={mdiLinkedin}  size={2}/></SocialIcon>
             <SocialIcon href="https://github.com/Sergio2709"><Icon path={mdiGithub }  size={2}/></SocialIcon>
         </SocialBox>
-
-
     </StyledDiv>
 }
 

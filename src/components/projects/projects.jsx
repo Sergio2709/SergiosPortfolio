@@ -1,6 +1,8 @@
 import React from "react";
 import { styled } from "styled-components";
 import Project from "./project/project";
+import encriptador from '../../img/Encriptador.png'
+
 
 const MainTittle = styled.h3`
     width: 100%;
@@ -23,24 +25,12 @@ const StyleDiv = styled.div`
 function Projects(){
     return <StyleDiv>
         <MainTittle>PROJECTS</MainTittle>
-                        <Project
-                            tittle={"Encriptador de codigo"}
-                            view={"encriptador.png"}
-                            URL={"https://sergio2709.github.io/Encriptador/"}
-                            repository={"https://github.com/Sergio2709/Encriptador"}
-                        />
-                     <Project
-                            tittle={"Encriptador de codigo"}
-                            view={"encriptador.png"}
-                            URL={"https://sergio2709.github.io/Encriptador/"}
-                            repository={"https://github.com/Sergio2709/Encriptador"}
-                        />
-                        <Project
-                            tittle={"Encriptador de codigo"}
-                            view={"encriptador.png"}
-                            URL={"https://sergio2709.github.io/Encriptador/"}
-                            repository={"https://github.com/Sergio2709/Encriptador"}
-                        />
+            <Project
+                tittle={"Encriptador de codigo"}
+                view={encriptador}
+                URL={"https://sergio2709.github.io/Encriptador/"}
+                repository={"https://github.com/Sergio2709/Encriptador"}
+            />
     </StyleDiv>
 }
 

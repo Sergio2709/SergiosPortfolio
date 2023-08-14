@@ -1,7 +1,14 @@
 import React from "react";
 import { styled } from "styled-components";
 import Hobbie from "./hobbie/hobbie";
-
+import Tech from '../../img/Tech.png'; 
+import Webpage from '../../img/Webpage.avif';
+import Logos from '../../img/Logos.avif';
+import Cooking from '../../img/cooking.png';
+import Exercise from '../../img/Exercise.jpg'; 
+import Soccer from '../../img/soccer.webp';
+import Videogames from '../../img/Videogames.avif';
+import Settings from '../../img/Settings.png';
 
 const MainTittle = styled.h3`
     width: 100%;
@@ -21,43 +28,42 @@ const StyleDiv = styled.div`
     padding:.7rem 4%;
 `
 
-
 function Hobbies(){
     return <StyleDiv>
         <MainTittle>HOBBIES</MainTittle>
             <Hobbie
-                icon= {"Tech.png"}
+                icon= {Tech}
                 text= {"Read about Technology"}
             />
             <Hobbie
-                icon= {"Webpage.avif"}
+                icon= {Webpage}
                 text= {"Create web pages"}
             />
             <Hobbie
-                icon= {"Logos.avif"}
+                icon= {Logos}
                 text= {"Create Logos"}
             />
             <Hobbie
-                icon= {"cooking.png"}
+                icon= {Cooking}
                 text= {"Cooking"}
             />
             <Hobbie
-                icon= {"Exercise.jpg"}
+                icon= {Exercise}
                 text= {"Do exercise"}
             />
             <Hobbie
-                icon= {"soccer.webp"}
+                icon= {Soccer}
                 text= {"Play Soccer"}
             />
             <Hobbie
-                icon= {"Videogames.avif"}
+                icon= {Videogames}
                 text= {"Play Videogames"}
             />
             <Hobbie
-                icon= {"Settings.png"}
+                icon= {Settings}
                 text= {"Set technology"}
             />
-
     </StyleDiv>
 }
+
 export default Hobbies
